@@ -1,10 +1,9 @@
 # drrrnl-wp-plugin
-News letter user request wordpress plugin
+<br/>News letter user request wordpress plugin
+<br/>This plugin allows users to let their contact details on a wordpress site.
 
-This plugin allows users to let their contact details on a wordpress site.
-
-Installation instructions.
-We suppose:
+<bold>Installation instructions:</bold>
+</br>We suppose:
 1. that the wordpress installation is under /var/www/wordpress/
 2. you have a super-user account.
 
