@@ -1,0 +1,41 @@
+.ck_drrrnl_form  {
+border-style: groove;
+color: orangered;
+margin: 10px;
+border-style: hidden;
+border-collapse: collapse;
+border-spacing: 10px;
+}
+
+.drrrnl_flexbox{
+border-style: groove;
+color: blue;
+font-size: medium;
+}
+
+.tr_drrrnl_form {
+margin-left: 5px;
+color: green;
+/*border-style: groove;*/
+display: flex;
+flex-direction: row;
+}
+
+.tr_drrrnl_form label {
+border-style: groove;
+color: seagreen;
+flex-grow: 1;
+}
+
+.requiredfield {
+color: grey;
+border-style: groove;
+flex-grow: 1;
+}
+
+.drrrnl_error {
+color: red;
+/*border-style: groove;*/
+flex-grow: 1;
+} 
+
