@@ -197,6 +197,21 @@ function drrrnl_send_alert_to_admin($user_inputs, $postid){
 /* list the existing contacts emails */
 function drrrnl_requests_list($title)
 {
+	$user = wp_get_current_user();
+	if( !is_user_logged_in() )
+	{
+		return("Not Authorized. Please connect first");
+	}
+	if(!current_user_can('administrator')){
+			$ret_msg = "Insufficient rights "
+					.$user->user_login
+					.'<br/>';
+			foreach($user->roles as $role)
+					$ret_msg = $ret_msg
+							 .$role
+							 .', ';
+		return($ret_msg);
+	}
 	$drrrnl_list 	= '<table class="drrrnl_list"><tr>';
 	$drrrnl_bottom 	= '</table>';
 	$drrrnl_args 	=	array(
